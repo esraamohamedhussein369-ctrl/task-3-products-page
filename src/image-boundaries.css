@@ -1,0 +1,27 @@
+.product-card,
+.product-image,
+.details-wrap,
+.details-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.details-image {
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.product-card > a {
+  display: block;
+}
+
+.product-image img,
+.details-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  min-width: 0;
+  min-height: 0;
+  object-fit: contain;
+}
